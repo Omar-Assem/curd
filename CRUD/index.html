@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h1>Product</h1>
+            <div class="mb-4">
+                <label for="productName">Product Name</label>
+                <input class="form-control" type="text" name="productName" 
+                id="Name" placeholder="Name">
+                <h5 class="d-none" id="error">you should put name</h5>
+            </div>
+            <div class="mb-4">
+                <label for="productPrice">Product Price</label>
+                <input class="form-control" type="number" name="productPrice"
+                 id="Price" placeholder="Price" >
+                 <h5 class="d-none" id="error">you should put price</h5>
+            </div>
+            <div class="mb-4">
+                <label for="productCateg">Product Category</label>
+                <input class="form-control" type="text" name="productCateg" 
+                id="Categ" placeholder="Category">
+            </div>
+            <div class="mb-4">
+                <label for="productDesc">Product Descrption</label>
+                <input class="form-control" type="text" name="productDesc" 
+                id="Desc" placeholder="Descrption">
+            </div>
+            <div class="mb-4">
+                <label for="productCount">Product Count</label>
+                <input class="form-control w-25" type="number"
+                 name="productCount" id="Count"  placeholder="Count">
+                 <h5 class="d-none" id="error">you should put count</h5>
+                 <small id="total">total</small>
+            </div>
+            <button class="btn btn-info mt-4" id="add">
+                Add Product
+            </button>
+            <button class="btn btn-danger mt-4"
+            onclick="deleteAll()" id="delete">
+               Delete All
+           </button>
+           <table class="table mt-4 text-center table-bordered">
+            <thead >
+                <th  class="bg-dark text-light">ID</th>
+                
+                <th class="bg-dark text-light" >Name</th>
+                <th class="bg-dark text-light" >Price</th>
+                <th class="bg-dark text-light" >Category</th>
+                <th class="bg-dark text-light" >Description</th>
+                <th class="bg-dark text-light" >Count</th>
+                <th  class="bg-dark text-light">Delete</th>
+                <th  class="bg-dark text-light">Update</th>
+                <th class="bg-dark text-light"> Total</th>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

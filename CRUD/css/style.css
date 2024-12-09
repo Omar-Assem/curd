@@ -1,0 +1,15 @@
+body{
+   background: linear-gradient(to bottom ,purple , pink ) ;
+   height: auto;
+}
+input:focus{
+   transform: scale(1.13);
+}
+#add{
+   background: linear-gradient(to right ,transparent , green);
+   transition: 0.5s;
+}
+#add:hover{
+   background: linear-gradient(to left ,transparent , green);
+   letter-spacing: 1px;
+}
